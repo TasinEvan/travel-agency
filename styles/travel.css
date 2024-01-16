@@ -10,13 +10,13 @@
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
     color: #131318;
 }
 
 .description {
-    font-size: 1.12rem;
+    font-size: 1rem;
     color: #424247;
     font-weight: 500;
 
@@ -68,6 +68,9 @@ header nav .title-container{
 nav .nav-bar a {
     text-decoration: none;
     margin-right: 30px;
+}
+.menu{
+    display: none;
 }
 header span{
     color: #FF5400;
@@ -131,6 +134,44 @@ cursor: pointer;
 .banner-form select:hover{
     background-color: darkturquoise;
 }
+/* popular section */
+.popular-tour-container{
+    margin: 75px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    
+    
+}
+.popular-tour-container img{
+    width: 100%;
+}
+.popular-tour-container>div{
+
+width: calc((100% - 70px) / 2);
+}
+.popular-tour-container>div .description{
+    margin-top: 20px;
+}
+.popular-tour-container > div .btn-primary{
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -138,7 +179,7 @@ cursor: pointer;
 
 @media screen and (max-width:600px) 
 {
-   
+   /* nav and banner section */
     .nav-bar a{
         display: none;
     }
@@ -180,6 +221,16 @@ cursor: pointer;
         width: 200px;
         height: 45px;}
     
-   
+   /* popular section */
+   .popular-tour-container{
+    flex-direction:column;
+    gap: 30px;
+    
+    margin:50px 15px ;
+
+   }
+   .popular-tour-container>div{
+
+    width: 100%;}
     
 }
